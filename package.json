@@ -1,0 +1,16 @@
+{
+  "name": "turn_app",
+  "version": "1.0.0",
+  "description": "Turn App",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev-app": "concurrently \"npm run dev --prefix client\" \"npm run start:dev --prefix server\"",
+    "install-app": "concurrently \"npm install --prefix server\" \"npm install --prefix client\""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
